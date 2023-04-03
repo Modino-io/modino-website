@@ -840,6 +840,8 @@ a:hover {
   align-items: center;
 }
 .m-image-section a {
+  display: inline-block;
+  text-align: center;
   width: 80%;
 }
 .m-image-section .m-request-access-img {
