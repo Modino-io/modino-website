@@ -52,12 +52,6 @@ body {
   text-transform: none;
 }
 
-html,
-body {
-  margin: 0;
-  overflow-x: clip;
-}
-
 body {
   background-color: #fbfbfb;
   height: 100%;
@@ -67,6 +61,11 @@ body {
   body {
     padding-block-start: 1.5rem;
   }
+}
+body,
+body html {
+  margin: 0;
+  overflow-x: clip;
 }
 body.m-no-padding {
   height: 100vh;
@@ -392,6 +391,20 @@ a:hover {
 }
 .m-menu__cta-button {
   display: none;
+  --mdc-outlined-button-outline-color: #004680;
+  --mdc-outlined-button-hover-state-layer-color: #e4e9ed;
+  --mdc-outlined-button-focus-state-layer-opacity: 1;
+  --mdc-outlined-button-pressed-state-layer-opacity: 1;
+}
+.m-menu__cta-button:hover {
+  --mdc-outlined-button-hover-state-layer-opacity: 1;
+}
+.m-menu__cta-button.mdc-ripple-upgraded--background-focused .mdc-button__ripple:before {
+  background-color: #bac7d4;
+}
+.m-menu__cta-button .mdc-button__ripple:after {
+  background-color: #8ea3b7;
+  z-index: 1;
 }
 @media screen and (min-width: 600px) {
   .m-menu__cta-button {
@@ -413,22 +426,6 @@ a:hover {
   .m-menu__logo {
     width: 140px;
   }
-}
-.m-menu__cta-button {
-  --mdc-outlined-button-outline-color: #004680;
-  --mdc-outlined-button-hover-state-layer-color: #e4e9ed;
-  --mdc-outlined-button-focus-state-layer-opacity: 1;
-  --mdc-outlined-button-pressed-state-layer-opacity: 1;
-}
-.m-menu__cta-button:hover {
-  --mdc-outlined-button-hover-state-layer-opacity: 1;
-}
-.m-menu__cta-button.mdc-ripple-upgraded--background-focused .mdc-button__ripple:before {
-  background-color: #bac7d4;
-}
-.m-menu__cta-button .mdc-button__ripple:after {
-  background-color: #8ea3b7;
-  z-index: 1;
 }
 
 .m-top-hero {

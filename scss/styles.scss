@@ -1,12 +1,6 @@
 @use "theme";
 @use "sass:map";
 
-html,
-body {
-  margin: 0;
-  overflow-x: clip;
-}
-
 body {
   background-color: map.get(theme.$modino-colors, surface, background);
   height: 100%;
@@ -14,6 +8,12 @@ body {
 
   @media screen and (min-width: 600px) {
     padding-block-start: theme.spacing(12);
+  }
+
+  &,
+  html {
+    margin: 0;
+    overflow-x: clip;
   }
 
   &.m-no-padding {
@@ -381,30 +381,6 @@ a {
   &__cta-button {
     display: none;
 
-    @media screen and (min-width: 600px) {
-      display: block;
-    }
-  }
-
-  &_sticky {
-    background-color: map.get(theme.$modino-colors, surface, background);
-    border-bottom: 1px solid map.get(theme.$modino-colors, surface, border);
-    transition: all ease 500ms;
-
-    .m-menu__logo {
-      content: url("./../img/MODINO-logo-short.svg");
-    }
-  }
-
-  &__logo {
-    width: 100px;
-
-    @media screen and (min-width: 600px) {
-      width: 140px;
-    }
-  }
-
-  &__cta-button {
     --mdc-outlined-button-outline-color: #{map.get(
         theme.$modino-colors,
         primary,
@@ -435,6 +411,28 @@ a {
         background-color: map.get(theme.$modino-colors, secondary-2, 200);
         z-index: 1;
       }
+    }
+
+    @media screen and (min-width: 600px) {
+      display: block;
+    }
+  }
+
+  &_sticky {
+    background-color: map.get(theme.$modino-colors, surface, background);
+    border-bottom: 1px solid map.get(theme.$modino-colors, surface, border);
+    transition: all ease 500ms;
+
+    .m-menu__logo {
+      content: url("./../img/MODINO-logo-short.svg");
+    }
+  }
+
+  &__logo {
+    width: 100px;
+
+    @media screen and (min-width: 600px) {
+      width: 140px;
     }
   }
 }
