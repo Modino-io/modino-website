@@ -34,7 +34,7 @@
   z-index: 1;
 }
 
-[class*=mdc-button] {
+[class*="mdc-button"] {
   font-size: 0.875rem;
   line-height: 1.5rem;
   font-weight: 700;
@@ -131,7 +131,7 @@ section {
   padding-inline: 20px;
   border-bottom: 2px solid transparent;
 }
-.m-section__item button[role=tab] {
+.m-section__item button[role="tab"] {
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -143,14 +143,14 @@ section {
   position: relative;
   font-family: "Nunito", sans-serif;
 }
-.m-section__item button[role=tab]:hover {
+.m-section__item button[role="tab"]:hover {
   color: #497291;
 }
 .m-section__item.active {
   border-color: #004680;
   z-index: 1;
 }
-.m-section__item.active button[role=tab] {
+.m-section__item.active button[role="tab"] {
   font-weight: bold;
   color: #004680;
 }
@@ -649,7 +649,8 @@ a:hover {
   flex: 1;
   color: rgba(255, 255, 255, 0.87);
 }
-.m-explanation__title, .m-explanation__description {
+.m-explanation__title,
+.m-explanation__description {
   max-width: 480px;
 }
 .m-explanation__title {
@@ -744,13 +745,17 @@ a:hover {
     margin-block-end: 0;
   }
 }
-.m-values__item-image, .m-values__item-title, .m-values__item-description {
+.m-values__item-image,
+.m-values__item-title,
+.m-values__item-description {
   text-align: center;
   padding-inline-start: 0;
   padding-inline-end: 0;
 }
 @media screen and (min-width: 600px) {
-  .m-values__item-image, .m-values__item-title, .m-values__item-description {
+  .m-values__item-image,
+  .m-values__item-title,
+  .m-values__item-description {
     padding-inline-start: 1.5rem;
     padding-inline-end: 1.5rem;
   }
@@ -778,8 +783,8 @@ a:hover {
 .m-form .mdc-select {
   width: 100%;
 }
-.m-form .mdc-text-field [class^=mdc-notched-outline__],
-.m-form .mdc-select [class^=mdc-notched-outline__] {
+.m-form .mdc-text-field [class^="mdc-notched-outline__"],
+.m-form .mdc-select [class^="mdc-notched-outline__"] {
   border-color: #e4e4e4;
 }
 .m-form .mdc-text-field--focused .mdc-floating-label {
@@ -933,7 +938,10 @@ a:hover {
     padding-block-start: 5rem;
   }
 }
-.m-privacy-text__header1, .m-privacy-text__header2, .m-privacy-text__header3, .m-privacy-text__header4 {
+.m-privacy-text__header1,
+.m-privacy-text__header2,
+.m-privacy-text__header3,
+.m-privacy-text__header4 {
   scroll-margin-top: 86px;
 }
 .m-privacy-text__header1 {
