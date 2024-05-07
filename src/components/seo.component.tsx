@@ -19,7 +19,7 @@ const Seo: React.FC<{
         href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet"
       />
-      <link rel="apple-touch-icon" href="icon.png" />
+      <link rel="apple-touch-icon" href={withPrefix("/icon.png")} />
       <link rel="icon" href={withPrefix("/favicon.ico")} />
     </React.Fragment>
   );
