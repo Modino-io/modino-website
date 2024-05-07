@@ -8,6 +8,7 @@ const Seo: React.FC<{
 }> = ({ pageTitle, description, link }) => {
   return (
     <React.Fragment>
+      <html lang="en" />
       <meta charSet="utf-8" />
       <title>{pageTitle}</title>
       <meta name="description" content={description} />
