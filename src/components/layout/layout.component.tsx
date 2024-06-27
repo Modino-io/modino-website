@@ -35,6 +35,12 @@ const Layout = ({
               {
                 name: "_gid",
               },
+            ],
+          },
+        },
+        targeting: {
+          autoClear: {
+            cookies: [
               {
                 name: /^_hj/,
               },
