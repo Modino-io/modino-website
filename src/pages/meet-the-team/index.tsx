@@ -200,29 +200,6 @@ const MeetTheTeam = () => {
               </div>
               <div className={styles.mPersonCard}>
                 <StaticImage
-                  alt="Katarzyna Chmielewska - Modino Design Lead profile image"
-                  src="./../../images/people/Kasia.webp"
-                  className={styles.mPersonCardImage}
-                />
-                <div className={styles.mPersonCardInfo}>
-                  <p>
-                    <strong>Katarzyna Chmielewska</strong>
-                  </p>
-                  <p>Design Lead</p>
-                  <a
-                    href="https://www.linkedin.com/in/kasia-chmielewska"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      alt="linkedIn icon"
-                      src={withPrefix("/img/linkedin.svg")}
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className={styles.mPersonCard}>
-                <StaticImage
                   alt="Karolina Szpera - Modino UX/UI Designer profile image"
                   src="./../../images/people/Karolina.webp"
                   className={styles.mPersonCardImage}
