@@ -277,20 +277,33 @@ const Solution = () => {
                 rel="noopener"
               >
                 <StaticImage
+                  layout="fullWidth"
                   src="./../../images/cybersecurity-award-banner.jpeg"
                   alt="European Cybersecurity STARTup Award for Modino.io"
                 />
               </a>
             </div>
-            <div className={styles.mAwardsCybersecurityMade}>
+            <div className={styles.mAwardsCyberSummit}>
               <a
-                href="https://www.cybersecurity-label.eu/labelled-companies/"
+                href="https://www.inncyberinnovationhub.com/"
                 target="_blank"
                 rel="noopener"
               >
                 <StaticImage
-                  src="./../../images/cybersecurity-made-in-europe.png"
-                  alt="cybersecurity made in Europe badge"
+                  src="./../../images/certificate_cyber_summit.jpg"
+                  alt="inncyber innovation hub certificate for Pawel Zebrowski with Modino.io"
+                />
+              </a>
+            </div>
+            <div className={styles.mAwardsEaglesOfInnovation}>
+              <a
+                href="https://www.rp.pl/orzel-innowacji/art40569821-poznalismy-laureatow-nagrod-rzeczpospolitej"
+                target="_blank"
+                rel="noopener"
+              >
+                <StaticImage
+                  src="./../../images/eagles_of_innovation.png"
+                  alt="Eagles of Innovation honorable mention for Modino.io"
                 />
               </a>
             </div>
