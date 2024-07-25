@@ -291,7 +291,7 @@ const Solution = () => {
               >
                 <StaticImage
                   src="./../../images/certificate_cyber_summit.jpg"
-                  alt="inncyber innovation hub certificate for Pawel Zebrowski with Modino.io"
+                  alt="Inncyber innovation hub award for Modino.io project"
                 />
               </a>
             </div>
@@ -303,7 +303,7 @@ const Solution = () => {
               >
                 <StaticImage
                   src="./../../images/eagles_of_innovation.png"
-                  alt="Eagles of Innovation honorable mention for Modino.io"
+                  alt="Eagles of Innovation honorable award for Modino.io"
                 />
               </a>
             </div>
