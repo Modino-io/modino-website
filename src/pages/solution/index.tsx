@@ -309,6 +309,17 @@ const Solution = () => {
             </div>
           </div>
         </section>
+        <section className="m-section">
+          <h2 className="m-section__header">Partnerships</h2>
+          <div className={`m-section__content ${styles.mAwardsContent}`}>
+            <div className={styles.mAwardsOVH}>
+              <StaticImage
+                src="./../../images/ovh_startup_program.png"
+                alt="OVH Cloud Startup Program"
+              />
+            </div>
+          </div>
+        </section>
         <section className={`m-section ${styles.mAdvantages}`}>
           <h2 className="m-section__header">Advantages</h2>
           <div className="m-section__content">
