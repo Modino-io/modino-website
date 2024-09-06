@@ -377,12 +377,14 @@ blockquote {
     }
     @media (min-width: 1200px) {
       flex-direction: row;
+      justify-content: center;
     }
   }
 
   &CybersecurityBanner,
   &CyberSummit,
-  &EaglesOfInnovation {
+  &EaglesOfInnovation,
+  &OVH {
     flex: 1;
     max-width: 530px;
     width: 100%;

@@ -228,6 +228,17 @@ const IndexPage = ({ data }: { data: { [key: string]: any } }) => {
             </div>
           </div>
         </section>
+        <section className="m-section">
+          <h2 className="m-section__header">Partnerships</h2>
+          <div className={`m-section__content ${styles.mAwardsContent}`}>
+            <div className={styles.mAwardsOVH}>
+              <StaticImage
+                src="./../images/ovh_startup_program.png"
+                alt="OVH Cloud Startup Program"
+              />
+            </div>
+          </div>
+        </section>
         <section className={`m-section ${styles.mArticlesTeaser}`}>
           <h2 className="m-section__header">Latest insights</h2>
           <div className="m-section__content">
