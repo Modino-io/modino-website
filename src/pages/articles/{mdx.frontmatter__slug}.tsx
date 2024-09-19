@@ -11,6 +11,26 @@ const BlogPost = ({
   children,
 }: React.PropsWithChildren<{ data: { [key: string]: any } }>) => {
   const image = getImage(data.mdx.frontmatter.thumbnail)!;
+
+  const displayCategoryChip = (category: string) => {
+    let chipStyle = "";
+
+    switch (category) {
+      case "Blog":
+        chipStyle = styles.mArticleChipRed;
+        break;
+      case "Case study":
+        chipStyle = styles.mArticleChipGreen;
+        break;
+      case "Press":
+        chipStyle = styles.mArticleChipBlue;
+        break;
+    }
+    return (
+      <div className={`${styles.mArticleChip} ${chipStyle}`}>{category}</div>
+    );
+  };
+
   return (
     <Layout>
       <main className="m-main">
@@ -39,11 +59,9 @@ const BlogPost = ({
                 {data.mdx.frontmatter.tile_title}
               </h1>
               <div className={styles.mArticleChips}>
-                <div
-                  className={`${styles.mArticleChip} ${styles.mArticleChipRed}`}
-                >
-                  Press
-                </div>
+                {data.mdx.frontmatter.category
+                  .split(", ")
+                  .map((cat: string) => displayCategoryChip(cat))}
               </div>
               <i className={styles.mArticleHeaderDate}>
                 {data.mdx.frontmatter.date}
@@ -80,6 +98,7 @@ export const query = graphql`
         meta_description
         date(formatString: "MMMM D, YYYY")
         slug
+        category
         thumbnail {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
