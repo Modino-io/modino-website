@@ -35,6 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
         )}?__contentFilePath=${node.internal.contentFilePath}`,
         context: {
           slug: node.frontmatter.slug,
+          id: node.id,
         },
       });
     });
@@ -63,6 +64,7 @@ exports.createPages = ({ graphql, actions }) => {
         )}?__contentFilePath=${node.internal.contentFilePath}`,
         context: {
           slug: node.frontmatter.slug,
+          id: node.id,
         },
       });
     });
