@@ -79,6 +79,7 @@
   &Chips {
     display: flex;
     grid-area: chips;
+    gap: spacing(4);
   }
 
   &Chip {
@@ -152,6 +153,10 @@
     align-items: flex-start;
 
     h2 {
+      @include m-font("subheading-3");
+    }
+
+    h3 {
       @include m-font("subheading-4");
     }
   }
