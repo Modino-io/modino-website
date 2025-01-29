@@ -239,6 +239,28 @@ const IndexPage = ({ data }: { data: { [key: string]: any } }) => {
             </div>
           </div>
         </section>
+        <section className="m-section">
+          <h2 className="m-section__header">We are part of</h2>
+          <div className={`m-section__content ${styles.mAwardsContent}`}>
+            <div className={styles.mAwardsGreenSME}>
+              <StaticImage
+                src="./../images/GreenSME_colours.png"
+                objectFit="contain"
+                alt="greenSME logo"
+              />
+              <StaticImage
+                src="./../images/EN_FundedbytheEU_RGB_POS.png"
+                objectFit="contain"
+                alt="Funded by the EU"
+              />
+              <p className={styles.mAwardsGreenSMEFundingInfo}>
+                This project has received funding from the European Union’s
+                Horizon Europe research and innovation programme under the GA
+                101058613
+              </p>
+            </div>
+          </div>
+        </section>
         <section className={`m-section ${styles.mArticlesTeaser}`}>
           <h2 className="m-section__header">Latest insights</h2>
           <div className="m-section__content">
