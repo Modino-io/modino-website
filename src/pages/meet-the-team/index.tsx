@@ -198,29 +198,6 @@ const MeetTheTeam = () => {
                   </a>
                 </div>
               </div>
-              <div className={styles.mPersonCard}>
-                <StaticImage
-                  alt="Karolina Szpera - Modino UX/UI Designer profile image"
-                  src="./../../images/people/Karolina.webp"
-                  className={styles.mPersonCardImage}
-                />
-                <div className={styles.mPersonCardInfo}>
-                  <p>
-                    <strong>Karolina Szpera</strong>
-                  </p>
-                  <p>UX / UI Designer</p>
-                  <a
-                    href="https://www.linkedin.com/in/karolinaszpera"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      alt="linkedIn icon"
-                      src={withPrefix("/img/linkedin.svg")}
-                    />
-                  </a>
-                </div>
-              </div>
             </div>
             <div className={styles.mPeopleList} hidden={currentTabIndex !== 3}>
               <div className={styles.mPersonCard}>
