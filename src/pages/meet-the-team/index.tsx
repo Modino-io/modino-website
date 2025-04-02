@@ -423,7 +423,7 @@ const MeetTheTeam = () => {
                   </p>
                   <p>DevOps Engineer</p>
                   <a
-                    href="https://www.linkedin.com"
+                    href="https://www.linkedin.com/in/micha%C5%82-k-8369b1163/"
                     target="_blank"
                     rel="noopener"
                   >
