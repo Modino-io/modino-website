@@ -390,17 +390,17 @@ const MeetTheTeam = () => {
             <div className={styles.mPeopleList} hidden={currentTabIndex !== 5}>
               <div className={styles.mPersonCard}>
                 <StaticImage
-                  alt="Patryk Janas - Modino DevOps Engineer profile image"
-                  src="./../../images/people/Patryk.webp"
+                  alt="Jan Kwarciński - Modino DevOps Engineer profile image"
+                  src="./../../images/people/Jan.webp"
                   className={styles.mPersonCardImage}
                 />
                 <div className={styles.mPersonCardInfo}>
                   <p>
-                    <strong>Patryk Janas</strong>
+                    <strong>Jan Kwarciński</strong>
                   </p>
                   <p>DevOps Engineer</p>
                   <a
-                    href="https://www.linkedin.com/in/patryk-janas"
+                    href="https://www.linkedin.com/in/jan-kwarci%C5%84ski"
                     target="_blank"
                     rel="noopener"
                   >
@@ -413,17 +413,17 @@ const MeetTheTeam = () => {
               </div>
               <div className={styles.mPersonCard}>
                 <StaticImage
-                  alt="Jan Kwarciński - Modino DevOps Engineer profile image"
-                  src="./../../images/people/Jan.webp"
+                  alt="Michał Kaliszewski - Modino DevOps Engineer profile image"
+                  src="./../../images/people/person_placeholder.webp"
                   className={styles.mPersonCardImage}
                 />
                 <div className={styles.mPersonCardInfo}>
                   <p>
-                    <strong>Jan Kwarciński</strong>
+                    <strong>Michał Kaliszewski</strong>
                   </p>
                   <p>DevOps Engineer</p>
                   <a
-                    href="https://www.linkedin.com/in/jan-kwarci%C5%84ski"
+                    href="https://www.linkedin.com/in/micha%C5%82-k-8369b1163/"
                     target="_blank"
                     rel="noopener"
                   >
