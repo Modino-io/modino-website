@@ -388,8 +388,35 @@
 
 .mAwards {
   &Content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: minmax(0, 500px);
+    align-items: center;
+    justify-content: center;
+    gap: theme.spacing(16);
+    padding-inline: theme.spacing(12);
+
+    @media (min-width: 600px) {
+      padding-inline: theme.spacing(32);
+    }
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(2, minmax(0, 300px));
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &Award {
+    max-width: 530px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.mPartnerships {
+  &Content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     align-items: center;
     gap: theme.spacing(16);
     padding-inline: theme.spacing(12);
@@ -403,10 +430,7 @@
     }
   }
 
-  &CybersecurityBanner,
-  &CyberSummit,
-  &EaglesOfInnovation,
-  &OVH {
+  &Partnership {
     flex: 1;
     max-width: 530px;
     width: 100%;

@@ -41,7 +41,7 @@ jobs:
     needs: [add-copyright-private, add-copyright-public]
     name: Static code analysis
     if: github.event.pull_request.draft == false
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v3
