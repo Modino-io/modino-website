@@ -129,29 +129,6 @@ const MeetTheTeam = () => {
             <div className={styles.mPeopleList} hidden={currentTabIndex !== 1}>
               <div className={styles.mPersonCard}>
                 <StaticImage
-                  alt="Michał Pawlak - Modino Scrum Master profile image"
-                  src="./../../images/people/Michal.webp"
-                  className={styles.mPersonCardImage}
-                />
-                <div className={styles.mPersonCardInfo}>
-                  <p>
-                    <strong>Michał Pawlak</strong>
-                  </p>
-                  <p>Scrum Master</p>
-                  <a
-                    href="https://www.linkedin.com/in/micha%C5%82-pawlak-17376689"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      alt="linkedIn icon"
-                      src={withPrefix("/img/linkedin.svg")}
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className={styles.mPersonCard}>
-                <StaticImage
                   alt="Paweł Żebrowski - Modino Business Development Manager profile image"
                   src="./../../images/people/Pawel-Z.webp"
                   className={styles.mPersonCardImage}
@@ -353,29 +330,6 @@ const MeetTheTeam = () => {
                   <p>Software Engineer</p>
                   <a
                     href="https://www.linkedin.com/in/pawe%C5%82-sobkowski"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      alt="linkedIn icon"
-                      src={withPrefix("/img/linkedin.svg")}
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className={styles.mPersonCard}>
-                <StaticImage
-                  alt="Kacper Kaźmierkiewicz - Modino Software Engineer profile image"
-                  src="./../../images/people/Kacper.webp"
-                  className={styles.mPersonCardImage}
-                />
-                <div className={styles.mPersonCardInfo}>
-                  <p>
-                    <strong>Kacper Kaźmierkiewicz</strong>
-                  </p>
-                  <p>Software Engineer</p>
-                  <a
-                    href="https://www.linkedin.com/in/kacper-kaz"
                     target="_blank"
                     rel="noopener"
                   >
