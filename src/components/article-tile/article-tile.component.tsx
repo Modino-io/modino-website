@@ -22,6 +22,19 @@ const ArticleTileComponent = ({
 }>) => {
   const image = getImage(thumbnailPhotoUrl)!;
 
+  const getArticleChipColor = (category: string) => {
+    switch (category.toLowerCase()) {
+      case "blog":
+        return "red";
+      case "case study":
+        return "green";
+      case "press":
+        return "blue";
+      default:
+        return "red";
+    }
+  };
+
   return (
     <Link to={`/articles/${slug}`} className={styles.mArticleTile}>
       <GatsbyImage
@@ -31,8 +44,11 @@ const ArticleTileComponent = ({
       />
       <div className={styles.mArticleTileContent}>
         <div className={styles.mArticleTileChips}>
-          {categories.split(",").map((element) => (
-            <ArticleChipComponent type="red" key={`${element}`}>
+          {categories.split(", ").map((element) => (
+            <ArticleChipComponent
+              type={getArticleChipColor(element)}
+              key={`${element}`}
+            >
               {element}
             </ArticleChipComponent>
           ))}

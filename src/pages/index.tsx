@@ -189,7 +189,7 @@ const IndexPage = ({ data }: { data: { [key: string]: any } }) => {
         <section className="m-section">
           <h2 className="m-section__header">Awards & Recognitions</h2>
           <div className={`m-section__content ${styles.mAwardsContent}`}>
-            <div className={styles.mAwardsCybersecurityBanner}>
+            <div className={styles.mAwardsAward}>
               <a
                 href="https://ecs-org.eu/return-of-ecsos-polish-edition-of-cyber-investor-days-in-katowice/"
                 target="_blank"
@@ -202,17 +202,80 @@ const IndexPage = ({ data }: { data: { [key: string]: any } }) => {
                 />
               </a>
             </div>
-            <div className={styles.mAwardsCybersecurityMade}>
+            <div className={styles.mAwardsAward}>
               <a
-                href="https://www.cybersecurity-label.eu/labelled-companies/"
+                href="https://www.inncyberinnovationhub.com/"
                 target="_blank"
                 rel="noopener"
               >
                 <StaticImage
-                  src="./../images/cybersecurity-made-in-europe.png"
-                  alt="cybersecurity made in Europe badge"
+                  src="./../images/certificate_cyber_summit.jpg"
+                  alt="Inncyber innovation hub award for Modino.io project"
                 />
               </a>
+            </div>
+            <div className={styles.mAwardsAward}>
+              <a
+                href="https://www.rp.pl/orzel-innowacji/art40569821-poznalismy-laureatow-nagrod-rzeczpospolitej"
+                target="_blank"
+                rel="noopener"
+              >
+                <StaticImage
+                  src="./../images/eagles_of_innovation.png"
+                  alt="Eagles of Innovation honorable award for Modino.io"
+                />
+              </a>
+            </div>
+            <div className={styles.mAwardsAward}>
+              <a
+                href="https://carpathianfest.pl/"
+                target="_blank"
+                rel="noopener"
+              >
+                <StaticImage
+                  src="./../images/Carpathians-semi-finals.jpg"
+                  alt="Carpathian 2025 Modino.io semi-finalist"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section className="m-section">
+          <h2 className="m-section__header">Partnerships</h2>
+          <div className={`m-section__content ${styles.mPartnershipsContent}`}>
+            <div className={styles.mPartnershipsPartnership}>
+              <StaticImage
+                src="./../images/hubraum-tech-incubator.png"
+                alt="hub:raum Tech Incubator"
+              />
+            </div>
+            <div className={styles.mPartnershipsPartnership}>
+              <StaticImage
+                src="./../images/ovh_startup_program.png"
+                alt="OVH Cloud Startup Program"
+              />
+            </div>
+          </div>
+        </section>
+        <section className="m-section">
+          <h2 className="m-section__header">We are part of</h2>
+          <div className={`m-section__content ${styles.mPartnershipsContent}`}>
+            <div className={styles.mPartnershipsGreenSME}>
+              <StaticImage
+                src="./../images/GreenSME_colours.png"
+                objectFit="contain"
+                alt="greenSME logo"
+              />
+              <StaticImage
+                src="./../images/EN_FundedbytheEU_RGB_POS.png"
+                objectFit="contain"
+                alt="Funded by the EU"
+              />
+              <p className={styles.mPartnershipsGreenSMEFundingInfo}>
+                This project has received funding from the European Union’s
+                Horizon Europe research and innovation programme under the GA
+                101058613
+              </p>
             </div>
           </div>
         </section>

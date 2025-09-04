@@ -29,11 +29,13 @@ Description of the fields in the header section:
   - `thumbnail` - source path for article's thumbnail, photo must be placed in `src/images` directory
   - `slug` - link to the article on which the article will be available (in this case, `modino.io/articles/v4-budapest-2023`),
   - `type` - hardcoded value which determines whether it is an `article` or `job-offer` (use `article` in this case),
-  - `category` - article's categories as coma-separated list, e.g. `case-study`, `press` or `blog`.
+  - `category` - article's categories as coma-separated list, e.g. `Case study`, `Press`, `Plog` or any combination of them, e.g. `Blog, Case study`.
+
+For checking meta tada (title, meta description) use this website https://totheweb.com/learning_center/tool-test-google-title-meta-description-lengths/
 
 ### Article's text
 
-After the header section, article text can be written using regular Markdown syntax.
+After the header section, article text can be written using regular Markdown syntax. Check https://www.markdownguide.org/basic-syntax/ for basics that you can use for text formating.
 
 To add an image, firstly add a file to `src/images` directory. In the article's text use Markdown syntax `![](./../images/image_name.ext)` where `image_name.ext` is a name of the image with its extension (e.g. `![](./../images/articles/V4-group-work-2023.jpeg)`).
 

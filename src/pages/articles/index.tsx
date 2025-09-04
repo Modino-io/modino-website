@@ -60,12 +60,17 @@ export const query = graphql`
           date(formatString: "MMMM D, YYYY")
           slug
           summary
+          category
           thumbnail {
             childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+              gatsbyImageData(
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+                layout: CONSTRAINED
+                width: 320
+              )
             }
           }
-          category
         }
       }
     }
