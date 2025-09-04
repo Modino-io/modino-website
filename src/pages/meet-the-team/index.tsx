@@ -129,29 +129,6 @@ const MeetTheTeam = () => {
             <div className={styles.mPeopleList} hidden={currentTabIndex !== 1}>
               <div className={styles.mPersonCard}>
                 <StaticImage
-                  alt="Michał Pawlak - Modino Scrum Master profile image"
-                  src="./../../images/people/Michal.webp"
-                  className={styles.mPersonCardImage}
-                />
-                <div className={styles.mPersonCardInfo}>
-                  <p>
-                    <strong>Michał Pawlak</strong>
-                  </p>
-                  <p>Scrum Master</p>
-                  <a
-                    href="https://www.linkedin.com/in/micha%C5%82-pawlak-17376689"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      alt="linkedIn icon"
-                      src={withPrefix("/img/linkedin.svg")}
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className={styles.mPersonCard}>
-                <StaticImage
                   alt="Paweł Żebrowski - Modino Business Development Manager profile image"
                   src="./../../images/people/Pawel-Z.webp"
                   className={styles.mPersonCardImage}
@@ -188,52 +165,6 @@ const MeetTheTeam = () => {
                   <p>CDO, Co-Founder</p>
                   <a
                     href="https://www.linkedin.com/in/radek-ratajczak"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      alt="linkedIn icon"
-                      src={withPrefix("/img/linkedin.svg")}
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className={styles.mPersonCard}>
-                <StaticImage
-                  alt="Katarzyna Chmielewska - Modino Design Lead profile image"
-                  src="./../../images/people/Kasia.webp"
-                  className={styles.mPersonCardImage}
-                />
-                <div className={styles.mPersonCardInfo}>
-                  <p>
-                    <strong>Katarzyna Chmielewska</strong>
-                  </p>
-                  <p>Design Lead</p>
-                  <a
-                    href="https://www.linkedin.com/in/kasia-chmielewska"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      alt="linkedIn icon"
-                      src={withPrefix("/img/linkedin.svg")}
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className={styles.mPersonCard}>
-                <StaticImage
-                  alt="Karolina Szpera - Modino UX/UI Designer profile image"
-                  src="./../../images/people/Karolina.webp"
-                  className={styles.mPersonCardImage}
-                />
-                <div className={styles.mPersonCardInfo}>
-                  <p>
-                    <strong>Karolina Szpera</strong>
-                  </p>
-                  <p>UX / UI Designer</p>
-                  <a
-                    href="https://www.linkedin.com/in/karolinaszpera"
                     target="_blank"
                     rel="noopener"
                   >
@@ -409,54 +340,8 @@ const MeetTheTeam = () => {
                   </a>
                 </div>
               </div>
-              <div className={styles.mPersonCard}>
-                <StaticImage
-                  alt="Kacper Kaźmierkiewicz - Modino Software Engineer profile image"
-                  src="./../../images/people/Kacper.webp"
-                  className={styles.mPersonCardImage}
-                />
-                <div className={styles.mPersonCardInfo}>
-                  <p>
-                    <strong>Kacper Kaźmierkiewicz</strong>
-                  </p>
-                  <p>Software Engineer</p>
-                  <a
-                    href="https://www.linkedin.com/in/kacper-kaz"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      alt="linkedIn icon"
-                      src={withPrefix("/img/linkedin.svg")}
-                    />
-                  </a>
-                </div>
-              </div>
             </div>
             <div className={styles.mPeopleList} hidden={currentTabIndex !== 5}>
-              <div className={styles.mPersonCard}>
-                <StaticImage
-                  alt="Patryk Janas - Modino DevOps Engineer profile image"
-                  src="./../../images/people/Patryk.webp"
-                  className={styles.mPersonCardImage}
-                />
-                <div className={styles.mPersonCardInfo}>
-                  <p>
-                    <strong>Patryk Janas</strong>
-                  </p>
-                  <p>DevOps Engineer</p>
-                  <a
-                    href="https://www.linkedin.com/in/patryk-janas"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      alt="linkedIn icon"
-                      src={withPrefix("/img/linkedin.svg")}
-                    />
-                  </a>
-                </div>
-              </div>
               <div className={styles.mPersonCard}>
                 <StaticImage
                   alt="Jan Kwarciński - Modino DevOps Engineer profile image"
@@ -470,6 +355,29 @@ const MeetTheTeam = () => {
                   <p>DevOps Engineer</p>
                   <a
                     href="https://www.linkedin.com/in/jan-kwarci%C5%84ski"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      alt="linkedIn icon"
+                      src={withPrefix("/img/linkedin.svg")}
+                    />
+                  </a>
+                </div>
+              </div>
+              <div className={styles.mPersonCard}>
+                <StaticImage
+                  alt="Michał Kaliszewski - Modino DevOps Engineer profile image"
+                  src="./../../images/people/person_placeholder.webp"
+                  className={styles.mPersonCardImage}
+                />
+                <div className={styles.mPersonCardInfo}>
+                  <p>
+                    <strong>Michał Kaliszewski</strong>
+                  </p>
+                  <p>DevOps Engineer</p>
+                  <a
+                    href="https://www.linkedin.com/in/micha%C5%82-k-8369b1163/"
                     target="_blank"
                     rel="noopener"
                   >

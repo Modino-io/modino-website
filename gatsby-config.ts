@@ -1,10 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
-  flags: {
-    DEV_SSR: true,
-  },
-  pathPrefix: "/modino-website",
+  pathPrefix: "/",
   siteMetadata: {
     siteUrl: `https://www.modino.io`,
   },
@@ -48,7 +45,6 @@ const config: GatsbyConfig = {
         name: `articles`,
         path: `${__dirname}/src/articles`,
       },
-      __key: "articles",
     },
     {
       resolve: "gatsby-source-filesystem",
@@ -56,15 +52,13 @@ const config: GatsbyConfig = {
         name: `jobs`,
         path: `${__dirname}/src/jobs`,
       },
-      __key: "jobs",
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: `./src/images`,
+        path: `${__dirname}/src/images`,
       },
-      __key: "images",
     },
   ],
 };

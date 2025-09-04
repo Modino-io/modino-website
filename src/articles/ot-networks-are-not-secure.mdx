@@ -1,0 +1,171 @@
+---
+title: "Modino.io - OT Networks Are Not Secure: Time to Stop Pretending"
+tile_title: "OT Networks Are Not Secure — Time to Stop Pretending"
+summary: "OT networks face growing cyber risks as legacy systems and false assumptions leave them exposed."
+date: "2025-05-14"
+thumbnail: "./../images/articles/ot-networks-are-not-secure.png"
+slug: "ot-networks-are-not-secure"
+type: "article"
+category: "Press"
+---
+
+On May 13, 2025, we had the opportunity to speak on the main stage of the **Trade Fair Studio at Warsaw Industry Automatica**. Our CEO, Błażej Pawlak, delivered a presentation focused on something we don’t talk about enough — and often far too late:  
+**the real state of cybersecurity in Operational Technology (OT) and Industrial IoT (IIoT) environments.**
+
+Our goal wasn’t to sell a solution. It was to **educate, raise awareness, and dismantle some dangerous illusions** still held by operators and decision-makers in industrial networks.
+
+---
+
+## The Illusion of Isolation
+One of the most persistent myths in OT environments is the belief that these systems are protected by design — because they’re air-gapped.  
+“They’re not connected to the Internet.”  
+“There’s no way in from the outside.”  
+“No one would want to attack us anyway.”
+
+Let’s be clear: those days are gone.
+
+Today’s OT systems are patched (or not) via USB drives. Vendors and integrators routinely connect via VPNs. Corporate IT and plant-floor OT now share infrastructure, identities, and in some cases, entire environments. Isolation is not a guarantee. In most cases, **it’s a dangerous assumption**.
+
+Meanwhile, attackers have evolved — and many no longer need a direct connection to get in. Sometimes, **an unencrypted radio signal or hardcoded credential is all it takes**. And they don’t need zero-day exploits to succeed — just persistence, visibility gaps, and weak operational controls.
+
+---
+
+## Real Attacks. Real Consequences.
+If you still think attacks on industrial networks are theoretical, consider what happened over the past 18 months.
+
+### 🇬🇧 Sellafield (UK)  
+In 2024, Sellafield — one of the UK’s most sensitive nuclear sites — was fined **£400,000** after it was revealed that **75% of its servers had not received security updates in over four years**.  
+_The Guardian_: [Sellafield ordered to pay nearly £400,000 over cybersecurity failings](https://www.theguardian.com/business/2024/oct/02/sellafield-ordered-to-pay-nearly-400000-over-cybersecurity-failings)
+
+### 🇺🇦 FrostyGoop (Ukraine)  
+A malware campaign disrupted heating in over 600 buildings in Lviv. The malware — **FrostyGoop** — exploited the **unauthenticated Modbus TCP protocol**, sending false control signals to ICS devices.  
+_Wired_: [How Russia-Linked Malware Cut Heat to 600 Ukrainian Buildings in Deep Winter](https://www.wired.com/story/russia-ukraine-frostygoop-malware-heating-utility/)
+
+### 🇺🇸 American Water (USA)  
+In 2024, **American Water Works**, the largest publicly traded water utility in the U.S., was hit by a cyberattack that shut down billing and customer systems.  
+_US News_: [US Says Cyberattacks Against Water Supplies Are Rising, and Utilities Need to Do More to Stop Them](https://www.usnews.com/news/business/articles/2024-05-20/epa-warns-of-increasing-cyberattacks-on-water-systems-urges-utilities-to-take-immediate-steps)
+
+### 🇩🇪 Germany — Grid Load Exploit  
+Researchers found unauthenticated radio signals were used to control grid load balancing.  
+_Ars Technica_: [Researchers say new attack could take down the European power grid](https://arstechnica.com/security/2025/01/could-hackers-use-new-attack-to-take-down-european-power-grid/)
+
+### 🇳🇱 Netherlands — Traffic Light Takeover  
+The KAR system could be spoofed by low-cost SDR hardware to change traffic lights in hundreds of cities.  
+_Cybernews_: [Dutch government will replace hackable traffic lights to avoid movie-like carnage](https://cybernews.com/news/dutch-government-will-replace-hackable-traffic-lights/)
+
+### 🇵🇱 Poland — Infrastructure Attacks  
+Polish cybercommand confirmed increased attacks on national infrastructure including energy, logistics, and public services.  
+_CyberDefence24_: [Attacks on Polish critical infrastructure. DKWOC Commander: We are changing NATO's approach](https://cyberdefence24.pl/armia-i-sluzby/ataki-na-polska-infrastrukture-krytyczna-dowodca-dkwoc-zmieniamy-podejscie-nato)
+
+These aren’t just headlines — they’re symptoms of widespread security debt and complacency in how we maintain, monitor, and defend OT environments. And the tools required to perform these attacks? Increasingly cheap, accessible, and modular.
+
+---
+
+## The Stats Speak for Themselves
+- **Average time to detect an attack in OT**: 243 days  
+  _CYFOR Secure / IBM_: [How long does it take to detect a cyber attack?](https://cyforsecure.co.uk/how-long-does-it-take-to-detect-a-cyber-attack/?utm_source=chatgpt.com)
+
+- **80% of OT intrusions go undetected**  
+  _Dragos_: [2023 OT Cybersecurity Year in Review Report](https://www.dragos.com/resources/reports/2023-ot-cybersecurity-year-in-review-report/)
+
+- **Many OT devices operate with outdated firmware/software**, exposing them to preventable attacks.
+
+These stats highlight a troubling gap: visibility in OT remains dangerously limited, incident response often relies on hope rather than tooling, and patching routines are either reactive or neglected entirely.
+
+---
+
+## 7 Myths That Keep OT Exposed
+1. **“We’re air-gapped.”**  
+   *Reality:* VPN access, remote maintenance tools, and USB updates all break the isolation assumption.  
+   _ComputerWeekly_: [Demystifying the top five OT security myths](https://www.computerweekly.com/news/366557017/Demystifying-the-top-five-OT-security-myths)
+
+2. **“We use our own protocols.”**  
+   *Reality:* “Security through obscurity” doesn’t work. Malware like Industroyer and FrostyGoop reverse-engineered proprietary protocols with ease.  
+   _SCADAfence_: [Debunking The Top 10 Discrete Manufacturing OT Cybersecurity Myths](https://blog.scadafence.com/debunking-the-top-10-discrete-manufacturing-ot-cybersecurity-myths)
+
+3. **“Firewall is enough.”**  
+   *Reality:* Firewalls don’t stop insider threats, lateral movement, or protocol-level attacks.  
+   _Rockwell_: [Debunking the Top 5 OT Endpoint Security Myths](https://www.rockwellautomation.com/en-us/company/news/blogs/top-5-ot-security-myths.html)
+
+4. **“We can’t update — downtime is too risky.”**  
+   *Reality:* Unpatched systems are far riskier. Virtual patching, rollback, and phased rollouts make updating safe.  
+   _Rockwell_: [Debunking the Top 5 OT Endpoint Security Myths](https://www.rockwellautomation.com/en-us/company/news/blogs/top-5-ot-security-myths.html)
+
+5. **“Old systems can’t be secured.”**  
+   *Reality:* You can wrap older devices in modern protections — segmentation, DPI, access control, etc.  
+   _Control Engineering_: [The cybersecurity challenges of legacy OT and how to manage them](https://www.controleng.com/the-cybersecurity-challenges-of-legacy-ot-and-how-to-manage-them/)
+
+6. **“We’re too small to be targeted.”**
+   *Reality:* Responsibility lies with the operator — legally and operationally.  
+   _SCADAfence_: [Debunking The Top 10 Discrete Manufacturing OT Cybersecurity Myths](https://blog.scadafence.com/debunking-the-top-10-discrete-manufacturing-ot-cybersecurity-myths)
+   
+7. **“It’s the vendor’s responsibility.”**  
+   *Reality:* Responsibility lies with the operator — legally and operationally.  
+   _ComputerWeekly_: [Demystifying the top five OT security myths](https://www.computerweekly.com/news/366557017/Demystifying-the-top-five-OT-security-myths)
+
+---
+
+## The Legal Shift — Compliance Is No Longer Optional
+Regulations like **CRA**, **NIS2**, and **RED2** have reshaped expectations for OT environments:
+
+- Signed and auditable updates  
+- Traceability and incident recovery  
+- Zero-trust access and encrypted communication  
+- Vendor transparency and lifecycle support
+
+These aren’t just [best practices](https://modino.io/articles/importance-of-iot-cybersecurity/) — they’re legal obligations. And in many verticals (energy, healthcare, transport), compliance is now a prerequisite for doing business.
+
+---
+
+## So What Now? What Do We Do?
+At **Modino.io**, we’ve designed a purpose-built update agent for OT and IIoT environments:
+
+- 🔐 End-to-end encryption  
+- ✅ Signed artifacts with integrity validation  
+- 🔁 Rollback + full audit  
+- 📡 Remote, policy-based updates  
+- ⚙️ No dependency on Docker or Kubernetes  
+
+We also support:
+
+- 💡 Immutable system images  
+- 🔄 Automatic sidecar app deployments  
+- 📊 Local + remote telemetry collection  
+
+Fully aligned with CRA, NIS2, and RED2.
+
+---
+
+## Closing Thoughts
+Security in OT is no longer a technical concern — it’s a business imperative.  
+It’s no longer enough to say, “That’s how we’ve always done it.”  
+Resilience means change — and change starts with visibility, accountability, and continuous improvement.
+
+If your devices:
+
+- still run default credentials,  
+- aren’t updated,  
+- lack visibility and traceability…  
+
+…then you are vulnerable.
+
+**Let’s fix that. Let’s talk.**
+
+---
+
+## Glossary
+**OT** – Operational Technology  
+**IT** – Information Technology  
+**IIoT** – Industrial Internet of Things  
+**APT** – Advanced Persistent Threat  
+**CRA** – Cyber Resilience Act  
+**NIS2** – EU Directive on cybersecurity for essential services  
+**RED2** – Radio Equipment Directive (2022/30)  
+**Modbus TCP** – insecure legacy ICS protocol  
+**DPI** – Deep Packet Inspection  
+**MFA** – Multi-Factor Authentication  
+**RBAC** – Role-Based Access Control  
+**VLAN** – Virtual LAN  
+**SDR** – Software Defined Radio  
+**Flipper Zero** – portable RF hacking/test device  
+**Rollback** – version reversion after update failure  
