@@ -1,6 +1,6 @@
 {
   "name": "modino-website",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "modino.io web page",
   "directories": {
     "doc": "doc"
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Modino-io/modino-cupcake-website.git"
+    "url": "git+https://github.com/Modino-io/modino-website.git"
   },
   "keywords": [
     "modino",
@@ -26,11 +26,11 @@
     "update"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "Modino.io proprietary",
   "bugs": {
-    "url": "https://github.com/Modino-io/modino-cupcake-website/issues"
+    "url": "https://github.com/Modino-io/modino-website/issues"
   },
-  "homepage": "https://github.com/Modino-io/modino-cupcake-website#readme",
+  "homepage": "https://github.com/Modino-io/modino-website#readme",
   "dependencies": {
     "@material/button": "^14.0.0",
     "@material/checkbox": "^14.0.0",
