@@ -63,3 +63,50 @@ Description of the fields:
 - `meta_description` - description placed in the meta tag which should summarize the job offer (for SEO purposes),
 - `slug` - link to the job offer on which it will be available (in this case, `modino.io/jobs/internship-program`),
 - `type` -  hardcoded value which determines whether it is an `article` or `job-offer` (use `job-offer` in this case).
+
+## Deployment instructions
+1. Check this repository and make required changes.
+2. Check your changes into a new branch, follow gitflow (https://nvie.com/posts/a-successful-git-branching-model/).
+3. Make PR from your branch into `master`.
+4. Ask for a review.
+5. Once everything is final, merge into `master` the build system will pick up the changes and deploy a new site.
+
+## Local development process - running the local website container
+
+We use a small wrapper so docker compose up always rebuilds first. No stale images, no surprises.
+
+Usage
+```
+make up     # rebuilds and starts; Ctrl-C stops without Make error
+make reup   # down + rebuild + up; Ctrl-C handled the same way
+make down   # stop/remove containers
+make ps     # show status
+make logs   # follow logs
+make clean  # full cleanup (containers, images, volumes, orphans, cache)
+```
+
+Tip: the first build is slower (fresh deps). Subsequent runs are faster thanks to BuildKit caching.
+
+### Where to Access the Site
+
+The container listens on 8080, the site is available at:
+
+http://localhost:8080
+ (on your machine)
+
+http://<your-ip>:8080 (from your LAN)
+
+Health check:
+
+`curl -i http://localhost:8080/healthz   # expect: HTTP/1.1 200 OK`
+
+
+If a port is taken, change the left side of the mapping (e.g., "3000:8080" → http://localhost:3000) and run make reup.
+
+### Troubleshooting
+
+* Port already in use → adjust ports: (e.g., 3000:8080), then make reup.
+* Force a clean rebuild → docker compose build --no-cache && make up
+
+* See what’s running →
+`docker compose ps` and `docker ps --format 'table {{.Names}}\t{{.Ports}}'`
