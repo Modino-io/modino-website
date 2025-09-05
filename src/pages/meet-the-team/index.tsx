@@ -23,13 +23,13 @@ const MeetTheTeam = () => {
       <main className="m-main">
         <section className={`m-section ${styles.mTeamHeader}`}>
           <h2 className="m-section__header">Meet the team</h2>
-          {/* <div className="m-section__content">
+          <div className="m-section__content">
             <StaticImage
               alt="Modino team photo"
-              src="./../../images/people/team-photo.webp"
+              src="./../../images/people/founders.webp"
               className={styles.mTeamPhoto}
             />
-          </div> */}
+          </div>
         </section>
         <section className={`m-section ${styles.mTeam}`}>
           <nav className={`m-section__content ${styles.mTeamMenu}`}>
