@@ -1,8 +1,42 @@
-version: "3"
+version: "3.8"
+
 services:
   client:
     build:
       context: .
       dockerfile: Dockerfile
+    image: modino.io/modino-website:local
     ports:
-      - "80:80"
+      - "8080:8080"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "wget -qO- http://127.0.0.1:8080/healthz || exit 1" ]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    read_only: true
+    tmpfs:
+      - /var/run/nginx:rw,uid=101,gid=101,size=16m
+      - /var/cache/nginx:rw,uid=101,gid=101,size=64m
+    environment:
+      - NODE_ENV=production
+      - GATSBY_TELEMETRY_DISABLED=1
+    labels:
+      org.opencontainers.image.title: "Modino.io website"
+      org.opencontainers.image.description: "Static Modino.io website served by Nginx"
+      org.opencontainers.image.source: "https://github.com/Modino-io/modino-website"
+      org.opencontainers.image.licenses: "Modino.io proprietary"
+    mem_limit: 256m
+    cpus: "0.50"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 256M
+        reservations:
+          memory: 64M

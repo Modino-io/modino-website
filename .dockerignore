@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log
+Dockerfile
+docker-compose.yaml
+docker-compose.yml
+.git
+.gitignore
+.dockerignore
+*.md
+*.log
+dist
+build
+coverage
+.vscode
+.idea
+.cache
+public
