@@ -4,7 +4,7 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 # Install minimal build tools if sharp ever compiles from source
-RUN apk add --no-cache python3 make g++ util-linux util-linux-misc
+RUN apk add --no-cache g++ make python3 util-linux util-linux-misc
 
 # Disable Gatsby telemetry + make builds non-interactive
 ENV GATSBY_TELEMETRY_DISABLED=1 \
