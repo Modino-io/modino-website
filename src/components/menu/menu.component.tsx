@@ -86,14 +86,6 @@ const Menu = ({
                     Articles
                   </Link>
                   <Link
-                    to="/meet-the-team"
-                    className={styles.mMenuActionsLink}
-                    activeClassName={styles.mMenuActionsLinkActive}
-                    partiallyActive
-                  >
-                    Meet the team
-                  </Link>
-                  <Link
                     to="/partner-program"
                     className={styles.mMenuActionsLink}
                     activeClassName={styles.mMenuActionsLinkActive}
@@ -186,14 +178,6 @@ const Menu = ({
             partiallyActive
           >
             Articles
-          </Link>
-          <Link
-            to="/meet-the-team"
-            className={styles.mMobileMenuActionsLink}
-            activeClassName={styles.mMobileMenuActionsLinkActive}
-            partiallyActive
-          >
-            Meet the team
           </Link>
           <Link
             to="/partner-program"

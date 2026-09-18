@@ -35,9 +35,6 @@ const FooterComponent = () => {
             <p className={styles.mFooterMenuSectionTitle}>Connect</p>
             <ul className={styles.mFooterMenuSectionList}>
               <li>
-                <Link to="/meet-the-team">Meet the team</Link>
-              </li>
-              <li>
                 <Link to="/partner-program">Partner Program</Link>
               </li>
               <li>
